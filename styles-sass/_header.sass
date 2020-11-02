@@ -1,0 +1,65 @@
+.header 
+    display: flex
+    min-height: 100px
+    align-items: center
+    
+    > *
+        height: inherit
+        display: flex
+        align-items: center
+    &-line 
+        border-bottom: 1px solid #ececec
+
+.logo 
+    display: flex
+    align-items: center
+    &__name
+        text-transform: uppercase
+        font-size: 27px
+        span
+            color: #f16d7f
+            font-weight: 900
+
+.search 
+    border-radius: 3px
+    border: 1px solid #e6e6e6
+    overflow: hidden
+    height: 38px
+
+    &__input 
+        height: inherit
+        outline: none
+        overflow: hidden
+        border: none
+        border-right: 1px solid #e6e6e6
+        border-left: 1px solid #e6e6e6
+
+    &__button 
+        outline: none
+        overflow: hidden
+        border: none
+        background-color: #fff
+
+
+.cart 
+    margin-left: auto
+
+.top-nav 
+    min-height: 51px
+    font-size: 14px
+    font-weight: 700
+
+
+    > .menu-list 
+        display: flex
+        justify-content: center
+        align-items: center
+        list-style-type: none
+
+
+        .menu-link 
+            text-transform: uppercase
+
+
+        .menu-item:not(:last-child) 
+            margin-right: 48px
