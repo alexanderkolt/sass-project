@@ -5,7 +5,27 @@
         display: flex
         justify-content: space-between
         align-items: center
-        min-height: inherit
+        min-height: inherit        
+        >h1
+            font-family: Lato
+            font-size: 24px
+            font-weight: 900
+            font-stretch: normal
+            font-style: normal
+            line-height: 0.83
+            letter-spacing: normal
+            color: #f16d7f
+    &__item >a,span
+        font-family: Lato
+        font-size: 14px
+        font-weight: 300
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.43
+        letter-spacing: normal
+        color: #636363
+    &__item >a:nth-of-type(3)
+        color: #f16d7f
 
 .product-details
     min-height: 102px
@@ -21,20 +41,94 @@
         flex-wrap: wrap
         justify-content: space-around
         align-content: start
+        >p
+            font-family: Lato
+            font-size: 13px
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.54
+            letter-spacing: normal
+            text-align: left
+            font-weight: 400
+            color: #6f6e6e
+            >span
+                font-family: Lato
+                font-size: 13px
+                font-weight: bold
+                font-stretch: normal
+                font-style: normal
+                line-height: 1.54
+                letter-spacing: normal
+                text-align: left
+                color: #575757
+                &:first-child
+                    color: #222222
+                    text-transform: uppercase
         > img
             margin-right: 21px
+    &__price
+        min-width: 76px
+        >p
+            font-family: Lato
+            font-size: 13px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.54
+            letter-spacing: normal
+            color: #656565
+    &__quantity
+        min-width: 66px
+    &__shipping
+        min-width: 60px
+        >p
+            font-family: Lato
+            font-size: 13px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.54
+            letter-spacing: normal
+            color: #656565
+    &__subtotal
+        min-width: 64px
+        >p
+            font-family: Lato
+            font-size: 13px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.54
+            letter-spacing: normal
+            color: #656565
+    &__action
+        min-width: 49px
+        >a
+            font-family: Lato
+            font-size: 16px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.54
+            letter-spacing: normal
+            color: #c0c0c0
     > p 
         display: flex
         text-transform: uppercase
         text-align: right
-        &:last-child
-            justify-content: flex-end
+        font-family: Lato
+        font-size: 13px
+        font-weight: bold
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.54
+        letter-spacing: -0.2px
+        color: #222222
 .product-row
     height: 162px
     justify-content: space-between
     border-bottom: solid 1px #eaeaea
 .product-details__price,.product-details__quantity,.product-details__shipping,.product-details__subtotal,.product-details__action
-    width: 10%
     display: flex
     justify-content: center 
     align-items: center
@@ -46,6 +140,15 @@
     text-align: center
     &::-webkit-inner-spin-button  
         display: none
+    &:placeholder
+        font-family: Lato
+        font-size: 13px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.54
+        letter-spacing: normal
+        color: #656565
 .shopping-cart-button
     min-height: 138px
     justify-content: space-between
@@ -95,6 +198,8 @@
         display: flex
         flex-direction: column
         justify-content: space-between
+        > div
+            display: flex
         > a
             max-width: 85px
             display: flex
