@@ -1558,3 +1558,266 @@ a {
   text-align: left;
   color: #f16d7f;
 }
+
+.image-slider {
+  min-height: 777px;
+  background-color: #f7f7f7;
+  background-image: url(../images/girloncheir.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image-slider > a {
+  min-width: 47px;
+  min-height: 47px;
+  background-color: #d8d8d8;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-to-cart {
+  min-height: 730px;
+  margin-top: -86px;
+  position: relative;
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px #eaeaea;
+}
+
+.add-to-cart__button-cart {
+  margin-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px #ef5b70;
+  min-width: 537px;
+  min-height: 55px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ef5b70;
+}
+
+.add-to-cart__button-cart:hover {
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.add-to-cart__devider {
+  min-height: 98px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3;
+  letter-spacing: normal;
+  color: #f16d7f;
+  border-bottom: solid 1px #eaeaea;
+}
+
+.add-to-cart__material-designer {
+  min-height: 301px;
+  max-width: 642px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: solid 1px #eaeaea;
+}
+
+.add-to-cart__material-designer__description-product {
+  color: #2f2f2f;
+}
+
+.add-to-cart__material-designer > span:nth-of-type(1) {
+  margin-top: 18px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #4d4d4d;
+  text-transform: uppercase;
+}
+
+.add-to-cart__material-designer > p {
+  margin-top: 67px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #5e5e5e;
+  text-align: center;
+}
+
+.add-to-cart__material-designer > span:nth-of-type(2) {
+  margin-top: 28px;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #b9b9b9;
+}
+
+.add-to-cart__material-designer > span:nth-of-type(3) {
+  margin-top: 27px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ef5b70;
+}
+
+.add-to-cart__material {
+  font-family: FontAwesome;
+}
+
+.add-to-cart__product-volue {
+  margin-top: 63px;
+  min-width: 537px;
+  min-height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add-to-cart__product-volue > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add-to-cart__product-volue > div > select, .add-to-cart__product-volue > div input {
+  padding-left: 14px;
+  min-width: 144px;
+  min-height: 35px;
+  outline: none;
+  border: solid 1px #eaeaea;
+  font-family: Lato, FontAwesome;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  color: #bcbcbc;
+}
+
+.add-to-cart__product-volue > div > input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.add-to-cart__product-volue > div > span {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #2f2f2f;
+}
+
+.block-pink-color {
+  width: 15px;
+  height: 15px;
+  background-color: #ef5b70;
+  position: absolute;
+  top: 504px;
+  right: 806px;
+}
+
+.you-may-like-also {
+  min-height: 197px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  color: #4d4d4d;
+}
