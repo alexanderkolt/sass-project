@@ -1,8 +1,11 @@
 .slid-landing-form
-    min-height: 562px
+    max-height: 562px
+    padding-bottom: 31px
     display: flex
     flex-direction: column
     border-bottom: 1px solid #e8e8e8
+    &:hover > form
+        display: flex
     &__other
         min-height: 79px
         display: flex
@@ -20,32 +23,72 @@
         text-transform: uppercase
 
     > form
-        min-height: 562px
-        display: flex 
+        min-height: 460px
+        display: none 
         justify-content: space-between
         div
+            margin-top: 39px
+            margin-bottom: 79px
             min-width: 50%
             max-height: 100%
             display: flex
             flex-direction: column
+            justify-content: space-between
+
             >p
                 font-family: Lato
                 font-size: 13px
                 font-weight: normal
                 font-stretch: normal
                 font-style: normal
-                line-height: 1.54
+                line-height: 1.74
                 letter-spacing: normal
                 color: #b3b2b2
+                > input
+                    width: 390px
+                    height: 45px
+                    border: solid 1px #eaeaea
+                    background-color: #ffffff
+                &:nth-of-type(2)
+                    min-height: 50px
+                    display: flex
+                    align-items: center
+                    > a:first-child
+                        display: flex
+                        flex-direction: row
+                        justify-content: center
+                        align-items: center
+                        width: 180px 
+                        height: 100%
+                        border: solid 1px #eaeaea
+                        background-color: #ffffff
+                        font-family: Lato
+                        font-size: 14px
+                        font-weight: bold
+                        font-stretch: normal
+                        font-style: normal
+                        line-height: normal
+                        letter-spacing: normal
+                        color: #4a4a4a
+                        text-transform: uppercase
+                    > a:last-child
+                        margin-left: 32px
                 >span
                     font-family: Lato
                     font-size: 13px
                     font-weight: normal
                     font-stretch: normal
                     font-style: normal
-                    line-height: normal
+                    line-height: 1.8
                     letter-spacing: normal
                     color: #222222
+                    > input[name="guest-or-register"]
+                        width: 14px
+                        height: 14px
+                        border: solid 2px #555555
+                        background-color: #ffffff
+            &:last-child>p>span:nth-of-type(3),&:last-child>p>span:nth-of-type(5),&:last-child>p>span:nth-of-type(6)
+                color: #ff0d0d
                 >span:not(:nth-of-type(6))
                     text-transform: uppercase
             &:first-child                
@@ -61,8 +104,22 @@
         letter-spacing: normal
         color: #222222
         text-transform: uppercase
+        cursor: pointer
 .slid-landing-form-shipping-button
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
     width: 180px
     height: 50px
     border: solid 1px #eaeaea
     background-color: #ffffff
+    font-family: Lato
+    font-size: 14px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #4a4a4a
+    text-transform: uppercase

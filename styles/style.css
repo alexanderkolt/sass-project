@@ -1830,7 +1830,8 @@ a {
 }
 
 .slid-landing-form {
-  min-height: 562px;
+  max-height: 562px;
+  padding-bottom: 31px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1839,6 +1840,12 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 1px solid #e8e8e8;
+}
+
+.slid-landing-form:hover > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slid-landing-form__other {
@@ -1866,16 +1873,16 @@ a {
 }
 
 .slid-landing-form > form {
-  min-height: 562px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  min-height: 460px;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .slid-landing-form > form div {
+  margin-top: 39px;
+  margin-bottom: 79px;
   min-width: 50%;
   max-height: 100%;
   display: -webkit-box;
@@ -1885,6 +1892,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .slid-landing-form > form div > p {
@@ -1893,9 +1903,59 @@ a {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.54;
+  line-height: 1.74;
   letter-spacing: normal;
   color: #b3b2b2;
+}
+
+.slid-landing-form > form div > p > input {
+  width: 390px;
+  height: 45px;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+}
+
+.slid-landing-form > form div > p:nth-of-type(2) {
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slid-landing-form > form div > p:nth-of-type(2) > a:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+  height: 100%;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
+.slid-landing-form > form div > p:nth-of-type(2) > a:last-child {
+  margin-left: 32px;
 }
 
 .slid-landing-form > form div > p > span {
@@ -1904,12 +1964,23 @@ a {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.8;
   letter-spacing: normal;
   color: #222222;
 }
 
-.slid-landing-form > form div > p > span:not(:nth-of-type(6)) {
+.slid-landing-form > form div > p > span > input[name="guest-or-register"] {
+  width: 14px;
+  height: 14px;
+  border: solid 2px #555555;
+  background-color: #ffffff;
+}
+
+.slid-landing-form > form div:last-child > p > span:nth-of-type(3), .slid-landing-form > form div:last-child > p > span:nth-of-type(5), .slid-landing-form > form div:last-child > p > span:nth-of-type(6) {
+  color: #ff0d0d;
+}
+
+.slid-landing-form > form div:last-child > p > span:nth-of-type(3) > span:not(:nth-of-type(6)), .slid-landing-form > form div:last-child > p > span:nth-of-type(5) > span:not(:nth-of-type(6)), .slid-landing-form > form div:last-child > p > span:nth-of-type(6) > span:not(:nth-of-type(6)) {
   text-transform: uppercase;
 }
 
@@ -1928,11 +1999,34 @@ a {
   letter-spacing: normal;
   color: #222222;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .slid-landing-form-shipping-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 180px;
   height: 50px;
   border: solid 1px #eaeaea;
   background-color: #ffffff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  text-transform: uppercase;
 }
